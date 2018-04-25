@@ -60,7 +60,7 @@ AC_DEFUN([BITCOIN_FIND_BDB48],[
     ])
   done
   if test "x$BDB_LIBS" = "x"; then
-      AC_MSG_ERROR([libdb_cxx missing, Axe Core requires this library for wallet functionality (--disable-wallet to disable wallet functionality)])
+      AC_MSG_ERROR([libdb_cxx missing, ]AC_PACKAGE_NAME[ requires this library for wallet functionality (--disable-wallet to disable wallet functionality)])
   fi
   AC_SUBST(BDB_LIBS)
 ])
